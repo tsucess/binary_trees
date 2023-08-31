@@ -80,6 +80,14 @@ int binary_tree_is_avl(const binary_tree_t *tree);
 void check_balance(avl_t **node, int value);
 avl_t *avl_in(avl_t **tree, int value);
 avl_t *avl_insert(avl_t **tree, int value);
+avl_t *array_to_avl(int *array, size_t size);
+void check_balance_avl(avl_t **node, int value);
+avl_t *inorder_sucessor(avl_t *tree, int mode);
+void change_node(avl_t **arg_tree, avl_t **arg_node);
+avl_t *avl_search_remove(avl_t **tree, int value);
+avl_t *avl_remove(avl_t *root, int value);
+void create_tree(avl_t **node, int *array, size_t size, int mode);
+avl_t *sorted_array_to_avl(int *array, size_t size);
 
 
 #endif /* BINARY_TREES_H */
